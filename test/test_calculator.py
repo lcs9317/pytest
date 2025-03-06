@@ -1,13 +1,13 @@
-from app.calculator import Calculator
+from app.calculator import add
 
 def test_add_positive():
-    calc = Calculator()
-    assert calc.add(1,2) == 3
+
+    assert add(1,2) == 3
     
 def test_add_negative():
-    calc = Calculator()
-    assert calc.add(-1,-2) == -3
+
+    assert add(-1,-2) == -3
     
 def test_add_mixed():
-    calc = Calculator()
-    assert calc.add(-1,2) == 1
+
+    assert add(-1,2) == 1
